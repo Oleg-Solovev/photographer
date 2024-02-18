@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Фотограф Владислав</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="Логотип сайта фотографа" width="130" height="30">
+      </a>
+      <nav class="nav header__nav" id="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы&nbsp;клиентов</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="btn-reset btn header__btn" id="call-form">Напишите&nbsp;мне</button>
+      <button class="btn-reset burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container grid">
+        <div class="hero__left">
+          <div class="hero__text">Профессиональный фотограф</div>
+          <div class="hero__level">Давайте поднимем ваши фотографии на&nbsp;новый уровень!</div>
+        </div>
+        <div class="hero__content">
+          <h1 class="visually-hidden">фотограф Владислав сайт</h1>
+          <div class="hero__hello">Привет, приятно с&nbsp;вами познакомиться!&nbsp;Я <span>Влад</span></div>
+          <p class="hero__descr hero__descr--1">Фотография&nbsp;&mdash; моя страсть, вдохновение и&nbsp;любовь.
+            Помогаю сохранить воспоминание о&nbsp;важных моментах и&nbsp;эмоциях. Гарантирую живые и&nbsp;уникальные
+            снимки.
+            Если ты&nbsp;хочешь посмотреть на&nbsp;себя под другим углом, получить классные снимки в&nbsp;приятной
+            и&nbsp;веселой атмосфере&nbsp;&mdash; тебе ко&nbsp;мне!
+          </p>
+          <p class="hero__descr">
+            Я&nbsp;провожу фотосессии в&nbsp;Москве и&nbsp;области. Выбирайте день и&nbsp;приходите на&nbsp;съёмку
+            в&nbsp;хорошем настроении, остальное&nbsp;&mdash; наша с&nbsp;вами дружная работа!
+            По&nbsp;всем вопросам проведения съемки пишите в&nbsp;телеграмм или воцапп.</p>
+          <div class="latest-shots hero__shots">
+            <div class="latest-shots__header">
+              <h2 class="latest-shots__title">Свежие фотки</h2>
+              <a href="#" class="latest-shots__all">Посмотреть все</a>
+            </div>
+            <div class="latest-shots__content">
+              <!-- slider -->
+              <div class="swiper" id="gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="latest-shots__link" aria-label="перейти к съемке">
+                      <img src="img/1.png" loading="lazy" alt="первая фотка" class="latest-shots__image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="latest-shots__link" aria-label="перейти к съемке">
+                      <img src="img/2.png" loading="lazy" alt="вторая фотка" class="latest-shots__image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="latest-shots__link" aria-label="перейти к съемке">
+                      <img src="img/3.png" loading="lazy" alt="третья фотка" class="latest-shots__image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="latest-shots__link" aria-label="перейти к съемке">
+                      <img src="img/4.png" loading="lazy" alt="четвертая фотка" class="latest-shots__image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="latest-shots__link" aria-label="перейти к съемке">
+                      <img src="img/5.png" loading="lazy" alt="четвертая фотка" class="latest-shots__image"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="latest-shots__nav">
+              <button class="btn-reset latest-shots__btn latest-shots__btn--left" aria-label="Сдвинуть влево" 
+              id="gallery-prev">
+                <svg width="26" height="16" viewBox="0 0 26 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.25 8.00001C25.25 7.76794 25.1578 7.54538 24.9937 7.38129C24.8296 7.21719 24.6071 7.12501 24.375 7.12501H3.73725L9.2445 1.61951C9.32585 1.53815 9.39039 1.44157 9.43442 1.33528C9.47844 1.22898 9.50111 1.11506 9.50111 1.00001C9.50111 0.884955 9.47844 0.77103 9.43442 0.664736C9.39039 0.558442 9.32585 0.46186 9.2445 0.380506C9.16315 0.299153 9.06657 0.234619 8.96027 0.190591C8.85398 0.146563 8.74005 0.123901 8.625 0.123901C8.50995 0.123901 8.39602 0.146563 8.28973 0.190591C8.18343 0.234619 8.08685 0.299153 8.0055 0.380506L1.0055 7.38051C0.924014 7.46179 0.859364 7.55834 0.815253 7.66465C0.771142 7.77095 0.748436 7.88491 0.748436 8.00001C0.748436 8.1151 0.771142 8.22906 0.815253 8.33536C0.859364 8.44167 0.924014 8.53823 1.0055 8.61951L8.0055 15.6195C8.08685 15.7009 8.18343 15.7654 8.28973 15.8094C8.39602 15.8535 8.50995 15.8761 8.625 15.8761C8.74005 15.8761 8.85398 15.8535 8.96027 15.8094C9.06657 15.7654 9.16315 15.7009 9.2445 15.6195C9.32585 15.5382 9.39039 15.4416 9.43442 15.3353C9.47844 15.229 9.50111 15.1151 9.50111 15C9.50111 14.885 9.47844 14.771 9.43442 14.6647C9.39039 14.5584 9.32585 14.4619 9.2445 14.3805L3.73725 8.87501H24.375C24.6071 8.87501 24.8296 8.78282 24.9937 8.61872C25.1578 8.45463 25.25 8.23207 25.25 8.00001Z" />
+                </svg>
+              </button>
+              <div class="latest-shots__nav">
+                <button class="btn-reset latest-shots__btn latest-shots__btn--right" aria-label="Сдвинуть вправо"
+                id="gallery-next">
+                  <svg width="26" height="16" viewBox="0 0 26 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.750008 8.00001C0.750008 7.76794 0.842194 7.54538 1.00629 7.38129C1.17038 7.21719 1.39294 7.12501 1.62501 7.12501H22.2628L16.7555 1.61951C16.6742 1.53815 16.6096 1.44157 16.5656 1.33528C16.5216 1.22898 16.4989 1.11506 16.4989 1.00001C16.4989 0.884955 16.5216 0.77103 16.5656 0.664736C16.6096 0.558442 16.6742 0.46186 16.7555 0.380506C16.8369 0.299153 16.9334 0.234619 17.0397 0.190591C17.146 0.146563 17.26 0.123901 17.375 0.123901C17.4901 0.123901 17.604 0.146563 17.7103 0.190591C17.8166 0.234619 17.9132 0.299153 17.9945 0.380506L24.9945 7.38051C25.076 7.46179 25.1406 7.55834 25.1848 7.66465C25.2289 7.77095 25.2516 7.88491 25.2516 8.00001C25.2516 8.1151 25.2289 8.22906 25.1848 8.33536C25.1406 8.44167 25.076 8.53823 24.9945 8.61951L17.9945 15.6195C17.9132 15.7009 17.8166 15.7654 17.7103 15.8094C17.604 15.8535 17.4901 15.8761 17.375 15.8761C17.26 15.8761 17.146 15.8535 17.0397 15.8094C16.9334 15.7654 16.8369 15.7009 16.7555 15.6195C16.6742 15.5382 16.6096 15.4416 16.5656 15.3353C16.5216 15.229 16.4989 15.1151 16.4989 15C16.4989 14.885 16.5216 14.771 16.5656 14.6647C16.6096 14.5584 16.6742 14.4619 16.7555 14.3805L22.2628 8.87501H1.62501C1.39294 8.87501 1.17038 8.78282 1.00629 8.61872C0.842194 8.45463 0.750008 8.23207 0.750008 8.00001Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- модальное окно -->
+  <div class="modal-parent" id="modal-call-form">
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2 class="modal__title">Напишите&nbsp;мне</h2>
+        <form action="#" class="form">
+          <label class="form__field">
+            <span class="form__text">Имя</span>
+            <input type="text" name="name" class="form__input">
+          </label>
+          <label class="form__field">
+            <span class="form__text">Телефон</span>
+            <input type="tel" name="phone" class="form__input">
+          </label>
+          <button class="btn-reset btn form__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
