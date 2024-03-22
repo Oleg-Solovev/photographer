@@ -23,6 +23,7 @@ svg {
   --bg: #1F2022;
   --main: #EEE;
   --second: #00ADB5;
+  --third: #008AB5;
   --light-text: #fff;
   --font-family: "Josefin Sans", sans-serif;
   --second-family: "Montserrat", sans-serif;
@@ -133,30 +134,33 @@ svg {
 }
 
 .nav__link {
-  color: var(--main);
   font-size: 18px;
   font-weight: 700;
+}
+
+.link {
+  color: var(--main);
   transition: color .3s ease-in-out;
   cursor: pointer;
 }
 
-.nav__link:focus {
+.link:focus {
   outline: none;
 }
 
-.nav__link:focus-visible {
+.link:focus-visible {
   outline: 2px dashed var(--second);
   outline-offset: 3px;
 }
 
 @media (any-hover: hover) {
-  .nav__link:hover {
+  .link:hover {
     color: var(--second);
   }
 }
 
-.nav__link:active {
-  color: var(--second);
+.link:active {
+  color: var(--third);
 }
 
 .burger {
@@ -172,6 +176,27 @@ svg {
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px dashed var(--second);
+  outline-offset: 3px;
+}
+
+@media (any-hover: hover) {
+  .btn:hover {
+    color: var(--main);
+    background-color: var(--second);
+  }
+}
+
+.btn:active {
+  background-color: var(--third);
 }
 
 .hero {
@@ -298,7 +323,7 @@ svg {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.04em;
-  color: var(--second);
+  /* color: var(--second); */
 }
 
 .latest-shots__content {
