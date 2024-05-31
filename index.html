@@ -12,6 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="js/inputmask.min.js"></script>
+  <!-- <script type="module" src="js/main.js" defer></script> -->
+  <script src="js/main.js" defer></script>
 
   <title>Фотограф Владислав</title>
 </head>
@@ -119,7 +121,7 @@
     <div class="modal-wrapper">
       <div class="modal">
         <h2 class="modal__title">Напишите&nbsp;мне</h2>
-        <form action="#" class="form" id="form" autocomplete="off">
+        <form class="form" id="form" autocomplete="off">
           <label class="form__field">
             <span class="form__text">Имя</span>
             <input class="form__input" type="text" id="name" name="name" autocomplete="off">
@@ -128,13 +130,17 @@
             <span class="form__text">Телефон</span>
             <input class="form__input" id="phone" type="tel" name="phone" autocomplete="off">
           </label>
+          <label class="form__field">
+            <span class="form__text">Сообщение</span>
+            <textarea class="form__input" name="msg" id="msg" autocomplete="off"></textarea>
+          </label>
           <button class="btn-reset btn form__btn">Отправить</button>
         </form>
       </div>
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+ 
 </body>
 
 </html>
