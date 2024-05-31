@@ -358,6 +358,19 @@ svg {
   height: 100%;
   object-fit: cover;
   fill: var(--light-text);
+  transition: fill .3s ease-in-out;
+}
+
+.latest-shots__btn:focus-visible {
+  outline: 2px dashed var(--second);
+}
+
+.latest-shots__btn:hover svg {
+  fill: var(--second);
+}
+
+.latest-shots__btn:active svg {
+  fill: var(--third);
 }
 
 .modal-parent {
@@ -412,6 +425,10 @@ svg {
 .form__input {
   width: 100%;
   height: 40px;
+}
+
+.form__input:focus {
+  outline: 2px dashed var(--second);
 }
 
 .form__btn {

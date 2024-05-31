@@ -33,18 +33,6 @@ window.addEventListener("keydown", function (event) {
     }
 })
 
-// Галерея
-const swiper = new Swiper("#gallery", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-
-    navigation: {
-        prevEl: "#gallery-prev",
-        nextEl: "#gallery-next"
-    }
-})
-
 // Валидация модального окна
 let validation = new JustValidate('#form')
 
@@ -90,4 +78,16 @@ validation.addField('#name', [
 //     }
 // ])
 
+
+// Галерея
+const swiper = new Swiper("#gallery", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    navigation: {
+        prevEl: "#gallery-prev",
+        nextEl: "#gallery-next"
+    }
+})
 
